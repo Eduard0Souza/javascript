@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Conversão de tipos</h1>
+    <p>Toda vez que utilizar um prompt, o resultado será uma variável com o tipo de dado String, assim, para fazer uma operação aritimética conforme o exemplo, é necessaário converter a variavel para um tipo de dado number (INT ou Float) utilisando o <strong>parse</strong> ficando assim: var soma = parseInt(n1) + parseInt(n2); ou seja, pega a variável entre parentes e transforma em um número inteiro. Outra forma de converter o tipo string seria o <strong>number</strong> utilizado na frente do window, ficando assim: var n1 = Number(window.prompt('Digite um número')) isso ja transformaria o texto digitado em um número.</p>
+    <p>Da mesma forma existe a Conversão de um número para texto, nesse caso deve-seu utilizar <strong>String(n)</strong> que transformará o conteúdo entre parenteses em uma variável com o tipo de dado String.</p>
+    <p>Também pode ser utilizado o <strong>n.toString()</strong>, tera o mesmo efeito transformando a variável n em uma String</p>
+
+    <h2>Template String ${var}</h2>
+    <p>Para as últimas versões do JavaScript, foi o criado o template strig, ele substitui a concatenação dos elementos dentro de uma string</p>
+    <p>Seu use sempre será feito dentro de crases (``), ficando assim: `o Aluno ${var_nome} com ${var_idade} anos tirou nota ${var_nota}`; isso pegará todas as variáveis e colocará nos locais previamente dispostos para elas</p>
+    
+    <script>
+        var n1 = window.prompt('Digite o primeiro número:');//string
+        var n2 = window.prompt('Digite o segundo número:');//string
+        var soma = parseInt(n1) + parseInt(n2);
+        window.alert(`A soma de ${n1} + ${n2} é igual a ${soma}.`);
+    </script>
+</body>
+</html>

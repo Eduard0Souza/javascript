@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Comandos JavaScript</h1>
+    <p>Manipulação de dados é uma parte fundamental do JavaScript. Aqui, vamos ver como capturar a entrada do usuário e exibir mensagens personalizadas.</p>
+    <h2>Exemplo de Manipulação de Dados</h2>
+    <p>Use o toFixed() para modificar números, por exemplo, em vez da variável n = 1250.5, pode ser utilizado o n.toFixed(2) que mostrará 2 casas decimais ficando: 1250.50;
+    E tambem pode ser utilizado para fazer substituição de vírgula por ponto, por exemplo, n = 1250.5.toFixed().replace('.', ',') que mostrará 1250,50;</p>
+    <p>Um comando para utilizar o simbolo da moeda local por exemplo, pode ser dscrito assim: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}), isso aprensentará o resultado: R$ 1250,50 </p>
+    <ul>
+        <li>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) = real</li>
+        <li>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) = dolar americano</li>
+        <li>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) = EURO </li>
+    </ul>
+    </p>
+    <p>O conteúdo a baixo foi gerado através dos JavaScript:</p>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?');
+        document.writeln(`Olá, ${nome}! Bem-vindo! <br>` );
+        document.writeln(`Seu nome tem ${nome.length} letras <br>`);
+        document.writeln(`A primeira letra do seu nome é ${nome[0]} <br>`);
+        document.writeln(`A última letra do seu nome é ${nome[nome.length - 1]} <br>`);
+        document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br>`);
+        document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()} <br>`);
+        
+    </script>
+</body>
+</html>
