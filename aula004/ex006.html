@@ -9,19 +9,64 @@
     <h1>Somando Valores</h1>
     <input type="number" id="num1" placeholder="Digite o primeiro número"><br>
     <input type="number" id="num2" placeholder="Digite o segundo número"><br>
-    <input type="button" value="Somar"  onclick="somar()">
+    <input type="submit" value="Somar"  onclick="somar()">
+    <input type="submit" value="Subtrair"  onclick="subtrair()">
+    <input type="submit" value="multiplicar"  onclick="mult()">
+    <input type="submit" value="dividir"  onclick="dividir()">
     <div id="resultado"> resultado</div>
     
     <script>
-        function somar(){
-            var tn1 = window.document.getElementById('num1');
-            var tn2 = window.document.getElementByID('num2');
+        /*function somar() {}
+            var tn1 = window.document.getElementById('num1').value;
+            var tn2 = window.document.getElementById('num2').value;
             var resultado = window.document.getElementById('resultado');
-            n1 = Number(tn1.value);
-            n2 = Number(tn2.value);
-            var resultado = n1 + n2;    
-            resultado.innerText = `A soma de ${tn1} + ${tn2} é igual a ${resultado}`;
+            var n1 = Number(tn1);
+            var n2 = Number(tn2);
+            var soma = n1 + n2;    
+            resultado.innerText = `A soma de ${n1} + ${n2} é igual a ${soma}`;
+        }*/
+        
+        function somar(){
+            var tn1 = window.document.getElementById('num1').value;
+            var tn2 = window.document.getElementById('num2').value;
+            var resultado = window.document.getElementById('resultado');
+            var n1 = Number(tn1);
+            var n2 = Number(tn2);
+            var soma = n1 + n2;    
+            resultado.innerText = `A soma de ${n1} + ${n2} é igual a ${soma}`;
         }
-    </script>
+
+        function subtrair(){
+            var tn1 = window.document.getElementById('num1').value;
+            var tn2= window.document.getElementById('num2').value;
+            var resultado = window.document.getElementById('resultado');
+            var n1 = Number(tn1);
+            var n2 = Number(tn2);
+            var sub = n1 - n2;
+            resultado.innerText = `A subtração entre ${n1} e ${n2} é igual a ${sub} `
+        }
+        function mult(){
+            var tn1 = Number(document.getElementById('num1').value);
+            var tn2 = Number(document.getElementById('num2').value);
+            var resultado = document.getElementById('resultado');
+            var mult = tn1 * tn2;
+            resultado.innerText = `A multiplicação entre ${tn1} e ${tn2} é igual a ${mult}`
+        }
+        function dividir(){
+            var tn1 = Number(document.getElementById('num1').value);
+            var tn2 = Number(document.getElementById('num2').value);
+            var resultado = document.getElementById('resultado');
+            if (tn2 === 0) {
+                resultado.innerText = "Divisão por zero não é permitida.";
+                return;
+            }
+            var div = tn1 / tn2;
+            resultado.innerText = ` A divisão entre ${tn1} e ${tn2} é igual a ${div}`
+        }
+        
+   </script>
 </body>
 </html>
+
+
+ 

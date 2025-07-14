@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Condições</h1>
+    <img src="imagens/condicoes.png" alt=""><br>
+    <input type="text" name="pais" id="pais" placeholder="Digite o nome do país">
+    <input type="button" value="verificar" onclick="verificarPais()">
+    <p id="resultado"></p>
+
+    <input type="text" name="vel" id="vel" placeholder="Digite a velocidade do carro">
+    <input type="button" value="verificar" onclick="verificarVelocidade()">
+    <p id="resultadoVelocidade"></p>
+
+    <script>
+        function verificarPais(){
+            var pais = document.getElementById('pais');
+            var res = document.getElementById('resultado');
+            pais.value = pais.value.toUpperCase();
+            if (pais.value == 'BRASIL'){
+                res.innerText = 'Você é brasileiro!';
+            }else{
+                res.innerText = 'Você é estrangeiro!';
+            }
+        }
+
+        
+        function verificarVelocidade(){
+            var vel = document.getElementById('vel');
+            var res = document.getElementById('resultadoVelocidade');
+            var velocidade = Number(vel.value);
+            if (velocidade > 60){
+                res.innerText = 'Você foi multado por excesso de velocidade!';
+            }else{
+                res.innerText = 'Você está dentro do limite de velocidade.';
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
