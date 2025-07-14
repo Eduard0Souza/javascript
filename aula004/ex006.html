@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" id="num1" placeholder="Digite o primeiro número"><br>
+    <input type="number" id="num2" placeholder="Digite o segundo número"><br>
+    <input type="button" value="Somar"  onclick="somar()">
+    <div id="resultado"> resultado</div>
+    
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('num1');
+            var tn2 = window.document.getElementByID('num2');
+            var resultado = window.document.getElementById('resultado');
+            n1 = Number(tn1.value);
+            n2 = Number(tn2.value);
+            var resultado = n1 + n2;    
+            resultado.innerText = `A soma de ${tn1} + ${tn2} é igual a ${resultado}`;
+        }
+    </script>
+</body>
+</html>

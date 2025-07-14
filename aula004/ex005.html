@@ -5,43 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
     <style>
-        body{
-            background-color: skyblue;
-            color: white;
-            font: normal 18pt Arial, sans-serif;
-        }
-        div{
-            display: inline-block;
-            background-color: darkblue;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        } 
-        img{
-            width: 250px;
-            height: 400px;
-        }
+    div#area{
+        background-color: darkgreen;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
     </style>
+
+    
 </head>
 <body>
-    <h1>Entendendo o DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
-    <div>Clique em mim</div>
-    
-    <h2>DOM</h2>
-    <ul>
-        <li>Domcument</li>
-        <li>Object</li>
-        <li>Model</li>
-    </ul>
-    <p>Window é a raiz do DOM, dentro do window existe vários outros objetos como: location, document  e history</p>
-    <img src="imagens/dom.png" alt="">
+    <h1>Eventos DOM</h1>
+    <div id="area" onclick="clicar()" onmouseenter = "entrar()" onmouseout="sair()">
+        Interaja
+    </div>
+    <h2>addEventListener</h2>
+    <p>O addEventListener é um método que permite adicionar eventos a elementos do DOM de forma mais flexível e organizada, utilizando o Javascript em vez do HTML.</p>
+    <p>Ele permite que você adicione múltiplos ouvintes de eventos a um único elemento, sem sobrescrever os ouvintes existentes.</p>
+    <p>Exemplo de uso:</p>  
+    <pre>
+      
+        var area = document.getElementById('area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrar);
+        area.addEventListener('mouseout', sair);
+        function clicar(){
+            area.innerText = 'Você clicou aqui!';
+        }   
+      
+    </pre>   
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0];//pega o conteúdo do primeiro parágrafo
-        document.write(p1.innerText)
-
-
+        var area = document.getElementById('area');
+        function clicar(){
+            
+            area.innerText = 'Você clicou aqui!';
+          
+        }
+        function entrar(){
+            
+          area.innerText = 'Você entrou na área!';
+                
+        }
+        function sair(){
+            area.innerText = 'Você saiu da área!';
+        }
     </script>
 </body>
 </html>
