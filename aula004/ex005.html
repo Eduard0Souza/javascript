@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body{
+            background-color: skyblue;
+            color: white;
+            font: normal 18pt Arial, sans-serif;
+        }
+        div{
+            display: inline-block;
+            background-color: darkblue;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        } 
+        img{
+            width: 250px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <div>Clique em mim</div>
+    
+    <h2>DOM</h2>
+    <ul>
+        <li>Domcument</li>
+        <li>Object</li>
+        <li>Model</li>
+    </ul>
+    <p>Window é a raiz do DOM, dentro do window existe vários outros objetos como: location, document  e history</p>
+    <img src="imagens/dom.png" alt="">
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0];//pega o conteúdo do primeiro parágrafo
+        document.write(p1.innerText)
+
+
+    </script>
+</body>
+</html>
