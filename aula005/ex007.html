@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        div.imagens {
+            display: flex;
+            height: 400px;
+            width: 400px;
+            justify-content: center;
+            gap: 20px;
+            border: 1px dashed black;
+        }
+        img{
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Condições simples compostas e aninhadas</h1>
+    <div class="imagens">
+    <img src="imagens/if else.png" alt="">
+    <img src="imagens/is else if.png" alt="">
+    </div>
+    <p>Condições simples tem apenas um "if", condições compostas tem pelo menos um "else" como  alternativa ao "if", condinções aninhadas podem ter vários "if else" dentro dele</p>
+    <h2>Exemplo de condições multipla</h2>
+    <pre>
+        var hora = new Date().getHours();
+        if (hora >= 6 && hora < 12 ){
+            console.log('Bom Dia!');
+        }else if (hora >= 12 && hora < 18){
+            console.log('Boa Tarde!');
+        } else if(hora >=18 && hora < 24){
+            console.log('Boa Noite!')
+        }else{
+            console.log('Boa Madrugada!')
+        }
+    </pre>
+
+    <h2> Condições Multiplas</h2>
+    
+    <img src="imagens/multipla.png" alt="">
+    <p>Condições multiplas são aquelas usadas para condiçoes pontuais, com seus valores definidos como por exemplos os dias de uma semana, meses do ano, etc. em JavaScript podemos usar o "switch" para isso. </p>  
+    <h2>exemplo do uso de switch</h2>
+    <pre>
+        var agora =  new Date();
+        var dia =  agora.getDay();
+        switch (dia){
+            case 0: 
+                console.log('Domingo');
+                break;
+            case 1:
+                console.log('Segunda-feira');
+                break;
+            case 2:
+                console.log('Terça-feira');
+                break;
+            case 3:
+                console.log('Quarta-feira');
+                break;    
+            case 4:
+                console.log('Quinta-feira');
+                break;
+            case 5:
+                console.log('Sexta-feira');
+                break;    
+            case 6:
+                console.log('Sábado');
+                break;  
+            default:
+                console.log('Dia inválido');
+                break;  
+        }   
+    </pre>  
+</body>
+</html>
