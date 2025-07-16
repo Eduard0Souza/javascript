@@ -1,52 +1,25 @@
 @charset "UTF-8";
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+   
     background-color: skyblue;
 
 }
-
-h1{
+header{
+    color: white;
     text-align: center;
-    color: white;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-div {
+section{
     background-color: white;
-    
-    margin-top: 20px;
-    padding: 10px;
-    width: 500px;
-   
-    margin: auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0,0 ,0.363);
 }
-div > input{
-    width: 40%;
-    margin-bottom: 25px;
-    
-}
-div > button {
-    width: 20%;
-    padding: 10px;
-    background-color: #4CAF50;
+footer{
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}  
-div > button:hover {
-    background-color: #45a049;
+    text-align: center;
+    font-style: italic;
 }
-div > img {
-    
-    display:none;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: auto;
-}
+

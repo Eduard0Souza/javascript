@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Validador de Idade</title>
+    <title>Identificador de Idade</title>
 </head>
 <body>
-    <h1>Verificador de Idade</h1>
-    <div id="formulario">
-        <label for="idade">Digite o ano do seu nascimento:</label>
-        <input type="number" id="ano" name="idade" min="0" max="120" placeholder="por Exemplo: 2000"><br>
-        
-        <label for="genero">Sexo:</label>
-        <label><input type="radio" id="masc"  name="genero" value="masculino"> Masculino</label>
-        <label><input type="radio" id="fem" name="genero" value="feminino"> Feminino</label><br>
-        <button id="verificar">Verificar</button>
-        <p>Digite os dados acima para ver o resultado!</p>
-        <img src="imagens/homem.jpg" alt="foto de menino">
-    </div>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento:
+            <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+            <label><input type="radio" id="masc"  name="genero" value="masculino" checked> Masculino</label>
+            <label><input type="radio" id="fem"  name="genero" value="feminino"> Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Eduardo</p>    
+    </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>

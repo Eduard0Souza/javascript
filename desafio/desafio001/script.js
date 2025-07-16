@@ -20,7 +20,7 @@ else if(hora >= 18 && hora < 24) {
     back.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'; // Cor de fundo para a noite;
 }else{
     informe.innerHTML = `Agora são ${hora} horas, boa madrugada!`;
-    imagem.src = 'imagens/boa_noite.jpg'; // Usando a mesma imagem de bom dia para a madrugada
+    imagem.src = 'imagens/boa_noite.jpg'; // Usando a mesma imagem de boa noite para a madrugada
     back.style.backgroundColor = 'rgba(0, 0, 0, 1)'; // Cor de fundo para a madrugada
 
 }
