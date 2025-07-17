@@ -13,30 +13,52 @@ function verificar(){
 
         if(fsex[0].checked){
             genero = "Homem";
-            if(idade >= 0 && idade < 12){//criança
+            if(idade == 1 ){
+                     res.innerHTML = `Detectamos criança com ${idade} ano.`;
+                     img.setAttribute('src', '../desafio002/imagens/menino.jpg')
+            }
+            else if(idade > 1 && idade < 12){//criança               
+                res.innerHTML = `Detectamos criança com ${idade} anos.`;
                 img.setAttribute('src', '../desafio002/imagens/menino.jpg')
+
             }else if( idade >=12 && idade < 18){//jovem
+                res.innerHTML = `Detectamos ${genero} jovem com ${idade} anos.`;
+                
                 img.setAttribute('src', '../desafio002/imagens/jovem_masculino.png')
             }else if(idade >=18 && idade < 60){//adulto
+                res.innerHTML = `Detectamos ${genero} atulto com ${idade} anos.`;
+               
                 img.setAttribute('src', '../desafio002/imagens/homem.jpg')
             }else{//idoso
+                res.innerHTML = `Detectamos ${genero} idoso com ${idade} anos.`;
+                
                 img.setAttribute('src', '../desafio002/imagens/idoso.jpg')
             }
         }else if (fsex[1].checked){
             genero = "Mulher";
-            if(idade >= 0 && idade < 12){//criança
+            if(idade == 1 ){
+                res.innerHTML = `Detectamos criança com ${idade} ano.`;
+                 img.setAttribute('src', '../desafio002/imagens/menina.jpg')
+            }
+            else if(idade > 1 && idade < 12){//criança                
+                res.innerHTML = `Detectamos criança com ${idade} anos.`;
                 img.setAttribute('src', '../desafio002/imagens/menina.jpg')
             }else if(idade >=12 && idade < 18){//jovem
+                res.innerHTML = `Detectamos ${genero} jovem com ${idade} anos.`;
                 img.setAttribute('src', '../desafio002/imagens/jovem_feminino.png')
             }else if(idade >= 18 && idade < 60){//adulto
+                res.innerHTML = `Detectamos ${genero} adulta com ${idade} anos.`;
+                
                 img.setAttribute('src', '../desafio002/imagens/mulher.jpg')
             }else{//idoso
+                res.innerHTML = `Detectamos ${genero} idosa com ${idade} anos.`;
+                
                 img.setAttribute('src', '../desafio002/imagens/idosa.jpg')
             }
         }
         res.style.textAlign = "center";
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
-        res.appendChild(img);
+        //res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
+         res.appendChild(img);
 
     }
 
