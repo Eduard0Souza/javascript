@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Estruturas de Repetições</h1>
+    <p>
+      As estruturas de repetições servem para repetir um bloco de código
+      enquanto uma condição for verdadeira.
+    </p>
+    <h2>While</h2>    
+    <p>Essa é a estrutura básica de um laço "while":</p>
+    <pre>
+            var c = 1;
+            while (c <= 6){
+                console.log(`${c}º Olá`);
+                c++;
+            }'
+            
+    </pre>
+       <img src="imagens/repeticao.png" alt="" />
+    <p>
+      A principal característica do while é que o teste lógico é feito no início
+      da estrutura, validando se a condição é ou não verdadeira, ao contrário do
+      "do while" que executa o bloco pelo menos uma vez antes de verificar se a
+      condição é verdadeira
+    </p>
+    <h2>Do While</h2>
+    <p>Essa é a estrutura básica do "do while":</p>
+    <pre>
+        var d = 1;
+        do {
+            console.log(`${d}º Olá`);
+            d++;
+        }while (d <= 6);
+    </pre>
+    <img src="imagens/dowhile.png" alt="" />
+    <p>
+      O "do while" é útil quando você precisa garantir que o bloco de código
+      seja executado pelo menos uma vez, independentemente da condição inicial.
+    </p>
+    <p>
+      Ambas as estruturas são úteis para iterar sobre sequências, mas a escolha
+      entre elas depende do comportamento desejado. Se você precisa que o código
+      seja executado pelo menos uma vez, use "do while". Se a condição deve ser
+      verificada antes da execução, use "while".
+    </p>
+    <h2> FOR</h2>
+    <p>Essa é a estrutura básica do "for":</p>
+    <pre>
+        for (var e = 1; e <= 6; e++){
+            console.log(`${e}º Olá`);
+        }
+    </pre>
+    <img src="imagens/for.png" alt="">
+    <p>O "for" tem 3 partes, o inicio, o teste e o incremento, seguido do bloco que contém as instruções que serão realizadas.</p>
+  </body>
+</html>
