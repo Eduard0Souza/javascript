@@ -1,8 +1,5 @@
 @charset "UTF-8";
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 body{
     background-color: skyblue;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,19 +13,14 @@ h1{
 section{
     
     background-color: white;
-    width: 70%;
+    width: 500px;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
 }
 
-section > div > input{
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-   
-}
+
 footer{
     text-align: center;
     background-color: black;
