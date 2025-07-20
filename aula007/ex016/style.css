@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.664);
+   
+}
+section{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.541);
+}
+select{
+    width: 200px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+   font-style: italic;
+   width: 100%;
+   position:fixed ;
+   left:0;
+   bottom:0;
+}
+footer> p{
+    padding: 2px;
+    margin: 0px;
+}
